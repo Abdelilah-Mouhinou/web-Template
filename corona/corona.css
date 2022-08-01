@@ -1,0 +1,383 @@
+body {
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+@media (max-width:1320px) {
+
+  header,
+  main,
+  footer,
+  a {
+    display: none !important;
+  }
+  body{
+    background-image: linear-gradient(to left , rgb(17, 184, 17) , rgb(97, 201, 128));
+  }
+  body::after{
+    font-size: 2.4rem;
+    content: 'Oh Damn ! i got infected ! 😷';
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media (max-height:643px) {
+
+  header,
+  main,
+  footer,
+  a {
+    display: none !important;
+  }
+  body::after{
+    font-size: 2.4rem;
+    content: 'Oh Damn ! i got infected ! 😷';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  padding-top: 5rem;
+  width: 100%;
+  height: 75vh;
+  background-image: url(images/7685299header.jpg);
+  background-size: contain;
+}
+
+body nav {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 22;
+  font-weight: bold;
+  top: 0;
+  display: inline-block;
+  color: #3979e9;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #0f224271; */
+}
+
+
+.fa-virus {
+  color: green;
+}
+
+div#logo {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+a {
+  color: #3979e9;
+  text-decoration: none;
+  /* background-color: #42360f; */
+}
+
+a:hover {
+  color: #56f17c;
+}
+
+li {
+  font-size: small;
+  padding-right: 2vh;
+  display: inline;
+}
+
+div.main {
+  color: white;
+  margin-left: 15vh;
+  width: 85%;
+  height: 60vh;
+  display: inline-block;
+}
+
+div.left {
+  font-size: xx-large;
+  width: 45%;
+  /* display: inline; */
+  float: left;
+}
+
+div.left>p {
+  margin-bottom: -2vh;
+}
+
+div.right {
+  /* display: inline; */
+  float: right;
+}
+
+input#button {
+  color: #0f2242;
+  padding: 1.5vh;
+  border: none;
+  border-radius: 2.5vh;
+  background-color: #56f17c;
+}
+
+main#Home {
+  margin: 12vh auto;
+  /* background-color: violet; */
+  width: 85%;
+}
+
+section#spread {
+  text-align: center;
+}
+
+h1 {
+  color: #161a25;
+}
+
+section#spread p {
+  color: #514d4a;
+}
+
+section#spread>div#human,
+div#air,
+div#touching {
+  display: inline-block;
+  width: 30%;
+  margin: 12vh 2.5vh;
+}
+
+section#definition{
+display: flex;
+gap: 2rem;
+}
+/* section#definition>div.left1,
+div.right1 {
+  display: inline-block;
+  width: 82vh;
+} */
+
+
+main#Symptoms {
+  width: 88%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #0f2242;
+  /* height: 150vh; */
+}
+
+main#Symptoms>h1 {
+  color: white;
+  padding-top: 10vh;
+}
+
+main#Symptoms>p {
+  color: white;
+  padding: 0 2rem;
+}
+
+main#Symptoms img {
+  padding-top: 4vh;
+}
+
+main#Symptoms>div#one,
+div#two,
+div#three,
+div#four,
+div#five,
+div#six {
+  text-align: center;
+  height: 50vh;
+  width: 30%;
+  background-color: white;
+  display: inline-block;
+  margin: 2vh;
+  border-radius: 9px;
+}
+
+main#Symptoms>section#spans {
+  height: 14vh;
+  background-color: #f6f7fb;
+  margin-top: 12vh;
+}
+
+section#spans>span#total {
+  padding: 6vh 12vh 5vh 5vh;
+  float: left;
+}
+
+span#numbers {
+  display: inline;
+  padding-top: 5vh;
+  float: left;
+}
+
+span#numbers:nth-of-type(2),
+span#numbers:nth-of-type(3) {
+  padding-right: 40vh;
+}
+
+span.nbr1::after {
+  content: "+ve Cases";
+  color: gray;
+  display: block;
+  padding-top: 1vh;
+}
+
+span.nbr2::after {
+  content: "Recoverd Cases";
+  color: gray;
+  display: block;
+  padding-top: 1vh;
+}
+
+span.nbr3::after {
+  content: "+ve Cases";
+  color: gray;
+  display: block;
+  padding-top: 1vh;
+}
+
+main#Prevention {
+  width: 88%;
+  text-align: center;
+  margin: 20vh auto;
+  /* background-color: red; */
+  height: 65vh;
+}
+
+main#Prevention>h1 {
+  padding-top: 10vh;
+}
+
+main#Prevention p {
+  margin: 2vh 6vh;
+  color: #514d4a;
+}
+
+main#Prevention div {
+  /* background-color: gray; */
+  height: fit-content;
+  width: 90%;
+  text-align: center;
+  /* display: inline-block; */
+  margin: 2vh;
+}
+
+main#Prevention div h1 {
+  font-size: 3vh;
+}
+
+main#Contact {
+  /* height: 81vh; */
+  width: 88%;
+  text-align: center;
+  margin: 20vh auto 0;
+  background-color: #f6f7fb;
+  padding-bottom: 2rem;
+}
+
+main#contact h1 {
+  padding-top: 1.5vh;
+}
+
+main#Contact label {
+  margin-left: 1.3vh;
+  float: left;
+  margin-top: 2vh;
+}
+
+main#Contact #inpt {
+  border: 1px solid gray;
+  border-radius: 1vh;
+  padding: 1.5vh;
+  margin: 2vh;
+  width: 90vh;
+}
+
+main#Contact #file {
+  margin-left: -25vw;
+  margin-bottom: 5vh;
+}
+
+main#Contact #send {
+  margin-left: -39vw;
+  border: none;
+  padding: 1.5vh 2.5vh;
+  background-color: #59f0a1;
+  border-radius: 2vh;
+}
+
+footer {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 12vh;
+  height: 50vh;
+  font-size: smaller;
+  color: rgb(129, 125, 125);
+  width: 100%;
+  background-color: #0f2242;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+
+}
+
+footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer div {
+  /* display: inline-block; */
+  width: 20%;
+}
+
+footer span {
+  font-size: smaller;
+
+  color: rgb(129, 125, 125);
+}
+
+footer #page{
+  width: fit-content;
+}
+
+
+footer div h1 {
+  font-size: 3vh;
+  color: #56f17c;
+}
+
+
+footer em {
+  font-style: normal;
+  color: #56f17c;
+}
+
+img#top {
+  position: fixed;
+  left: 95vw;
+  top: 94vh;
+}
